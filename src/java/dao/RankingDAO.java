@@ -49,7 +49,7 @@ public class RankingDAO {
             em.getTransaction().rollback();
             throw e;
        } finally {
-          //  em.close();
+           em.close();
        }
         
     }
@@ -70,7 +70,7 @@ public class RankingDAO {
             
         } finally {
             
-        //    em.close();
+          em.close();
             
         }
         
